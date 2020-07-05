@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Pokemons } from "../../api/card";
 import Card from "../Card";
 import Pagination from "../Pagination";
+import loader from "../../assets/loader.gif"
 
 const CardContainer = styled.div`
   max-width: 1024px;
@@ -25,10 +26,14 @@ const CardContainer = styled.div`
 
 const Cards = () => {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
+  
 
   const getPokemons = async ({ url }) => {
+    setLoading(true);
     const response = await Pokemons({ url });
     setData(response);
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -40,14 +45,23 @@ const Cards = () => {
   };
 
   return (
+    
     <div>
-      <CardContainer>
-        {data?.results?.map((item, i) => (
-          <Card data={item} key={i} />
-        ))}
-      </CardContainer>
-      <Pagination data={data} handleGet={updatePagination} />
+    { loading ? 
+      ( <div className="loading"><img src={loader} alt="loading"/>loading</div> ) : (
+      <>
+        <CardContainer>
+          {data?.results?.map((item, i) => (
+            <Card data={item} key={i} />
+          ))}
+        </CardContainer>
+        <Pagination data={data} handleGet={updatePagination} />
+      </>
+      )
+    }
+
     </div>
+    
   );
 };
 
