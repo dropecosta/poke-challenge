@@ -51,8 +51,8 @@ const ModalWraper = styled.div`
       }
       .close {
         border: none;
-        width: 3em;
-        height: 3em;
+        width: 48px;
+        height: 48px;
         position: absolute;
         top: 20px;
         right: 30px;
@@ -76,10 +76,10 @@ const ModalWraper = styled.div`
         }
 
         .tag-moves {
-          padding: 0.6em 1.2em;
+          padding: 5px 20px;
           background: #342866;
           color: #fff;
-          font-size: 0.6em;
+          font-size: 10.2px;
           letter-spacing: 1px;
           text-transform: uppercase;
           cursor: pointer;
@@ -107,7 +107,7 @@ const ModalWraper = styled.div`
       .stat-item-title {
         width: 100px;
         border: none;
-        padding: 0.6em 1.2em;
+        padding: 10px 10px;
         background: #342866;
         color: #fff;
         font-size: 0.6em;

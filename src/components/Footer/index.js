@@ -7,9 +7,9 @@ const FooterWrapper = styled.footer`
   text-align: center;
   
   .copyright{
-    font-size: 0.6em;
+    font-size: 9.5px;
     color: #867abc;
-    letter-spacing: .2em;
+    letter-spacing: 3.2px;
     text-transform: uppercase;
   }
 ;`

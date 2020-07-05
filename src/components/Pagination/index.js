@@ -11,7 +11,7 @@ const PaginationWrapper = styled.div`
     border: 2px solid #342866;
     background: transparent;
     font-weight: 700;
-    font-size: 0.8em;
+    font-size: 13px;
     text-transform: uppercase;
     margin: 15px auto 0;
     min-width: 200px;
@@ -21,7 +21,7 @@ const PaginationWrapper = styled.div`
     cursor: pointer;
     transition: all .3s;
     outline: none !important;
-    padding: 0.6em 1.2em;
+    padding: 10px 20px;
 
     &:hover {
       box-shadow: 0px 8px 60px -10px rgba(13, 28, 39, 0.6);

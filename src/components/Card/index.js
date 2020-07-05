@@ -27,11 +27,11 @@ const CardWrapper = styled.div`
   .title {
     text-align: right;
     text-transform: uppercase;
-    margin-top: -40px;
+    margin-top: -70px;
     margin-right: 10px;
     font-weight: 700;
     font-size: 22px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.8px;
     color: #fff;
   }
 
@@ -39,7 +39,7 @@ const CardWrapper = styled.div`
     border: 2px solid #fff;
     background-color: transparent;
     letter-spacing: 0.2px;
-    font-size: 0.7em;
+    font-size: 12px;
     text-transform: uppercase;
     margin: 15px auto 0;
     padding: 10px 40px;
