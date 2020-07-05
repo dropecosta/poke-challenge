@@ -1,26 +1,24 @@
-import React from 'react'
-import Logo from '../../assets/pokemon-logo.png'
-
+import React from "react";
 import styled from "styled-components";
+import Logo from "../../assets/pokemon-logo.png";
 
-const Wrapper = styled.header`
+const HeaderWrapper = styled.header`
   display: flex;
   flex: 1;
   justify-content: center;
   width: 100%;
-`
 
-const Pokemon = styled.img`
+  img {
     width: 433px;
     height: 188px;
-    margin: 30px 0 50px 0;
-`
+    margin: 60px 0;
+  }
+`;
 
 export default function Header() {
-    return (
-        <Wrapper>
-            <Pokemon src={Logo} className="Logo" alt="Logo Pokemon" />
-        </Wrapper>
-    )
+  return (
+    <HeaderWrapper>
+      <img src={Logo} className="Logo" alt="Logo Pokemon" />
+    </HeaderWrapper>
+  );
 }
-

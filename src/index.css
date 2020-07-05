@@ -1,8 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous&display=swap);
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Righteous', cursive, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -10,18 +10,7 @@ body {
   grid-template-areas: "header" "main" "footer";
   background-image: linear-gradient(-20deg, rgba(107, 74, 255, 0.5) 0%, #6944ff 100%);
 }
-.header { 
-  grid-area: header; 
-} 
-.main { 
-  grid-area: main;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-} 
-.footer { 
-  grid-area: footer; 
-}
+
 
 
 
